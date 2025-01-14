@@ -1,0 +1,12 @@
+services:
+    node:app:
+      build:
+        context: .
+      ports:
+        -3000:3000
+
+    flask-app:
+      build:
+        context: ./python/
+      ports:
+        -3001:3000
